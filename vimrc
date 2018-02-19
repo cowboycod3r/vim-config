@@ -3,8 +3,10 @@ set hidden							" hide buffer
 set encoding=utf-8                  " encoding
 
 set wrap        					" wrap lines
-set shiftwidth=4					" ident with four spaces
-set tabstop=4     					" a tab has four spaces
+set shiftwidth=2					" ident with n spaces
+set softtabstop=2
+set tabstop=2     					" a tab has n spaces
+set expandtab							" use spaces
 set backspace=indent,eol,start  	" allow backspacing over everything in insert mode
 set autoindent    					" set autoindenting on
 set copyindent    					" copy the previous indentation on autoindenting
