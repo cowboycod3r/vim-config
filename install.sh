@@ -11,7 +11,7 @@ cd ~
 mv .vim .vim.legacy
 mv .vimrc .vimrc.legacy
 
-ln -s $pwd/vim .vim
+ln -s $pwd .vim
 ln -s $pwd/vimrc .vimrc
 
 echo ' done.'
