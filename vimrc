@@ -36,3 +36,6 @@ let NERDTreeSortOrder=[]
 colorscheme molokai
 
 filetype indent on
+
+autocmd VimEnter * NERDTree
+autocmd VimEnter * wincmd p
