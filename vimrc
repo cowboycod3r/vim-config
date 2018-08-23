@@ -33,6 +33,8 @@ set guioptions-=r					"remove scrollbar right
 set guioptions-=L					"remove scrollbar left in nerdtree
 
 let NERDTreeSortOrder=[]
+let NERDTreeMinimalUI=1
+let NERDTreeDirArrows=1
 
 colorscheme molokai
 
