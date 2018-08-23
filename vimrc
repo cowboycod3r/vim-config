@@ -13,9 +13,10 @@ set copyindent    					" copy the previous indentation on autoindenting
 
 set ruler							" add a line / column display in the bottom right-hand section
 "set number							" show line numbers
+set cursorline
+
 set ignorecase						" ignore case when searching
 set smartcase						" case-sensitive otherwise
-
 set hlsearch      					" highlight the search terms
 set incsearch     					" show search matches as you type
 
