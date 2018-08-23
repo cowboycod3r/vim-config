@@ -35,6 +35,7 @@ set guioptions-=L					"remove scrollbar left in nerdtree
 let NERDTreeSortOrder=[]
 let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
+let NERDTreeQuitOnOpen=1
 
 colorscheme molokai
 
@@ -42,5 +43,5 @@ filetype indent on
 
 autocmd VimEnter * command T NERDTreeToggle
 autocmd VimEnter * command Tc NERDTreeClose
-autocmd VimEnter * NERDTree
-autocmd VimEnter * wincmd p
+" autocmd VimEnter * NERDTree
+" autocmd VimEnter * wincmd p
