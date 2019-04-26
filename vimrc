@@ -45,6 +45,13 @@ autocmd VimEnter * command T NERDTreeToggle
 " autocmd VimEnter * NERDTree
 " autocmd VimEnter * wincmd p
 
+
+autocmd StdinReadPre * let s:std_in=1
+" open a NERDTree automatically when vim starts up if no files were specified
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" open NERDTree automatically when vim starts up on opening a directory
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
+
 " automatically close a tab if the only remaining window is NerdTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
