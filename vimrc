@@ -42,5 +42,5 @@ colorscheme molokai
 filetype indent on
 
 autocmd VimEnter * command T NERDTreeToggle
-" autocmd VimEnter * NERDTree
+autocmd VimEnter * NERDTree
 " autocmd VimEnter * wincmd p
