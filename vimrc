@@ -35,7 +35,7 @@ set guioptions-=L					"remove scrollbar left in nerdtree
 let NERDTreeSortOrder=[]
 let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
-let NERDTreeQuitOnOpen=1				"automatically close NerdTree when you open a file
+let NERDTreeQuitOnOpen=0				"automatically close NerdTree when you open a file
 
 colorscheme molokai
 
